@@ -49,7 +49,7 @@ account_id =
 # Seperator between groups: ,
 # Example:
 Admin = First Tier Admin, Second Tier Admin
-Management = Server Managemen
+Management = Server Management
 ```
 
 ## Updating
