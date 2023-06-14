@@ -1,0 +1,14 @@
+version: '2.4'
+services:
+  BFACPCloudflareSync:
+    container_name: BFACPCloudflareSync
+    image: hedius/bfacpcloudflaresync:latest
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: ./config.ini
+        target: /usr/src/app/config.ini
+    security_opt:
+      - no-new-privileges
+    mem_limit: 500M
+    mem_reservation: 250M

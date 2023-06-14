@@ -1,0 +1,43 @@
+include:
+  - template: Code-Quality.gitlab-ci.yml
+
+image: python:3
+stages:
+  - code quality
+  - build
+
+flake8:
+  stage: code quality
+  tags:
+    - docker
+  script:
+    - python -m pip install flake8
+    - flake8 --max-line-length 120 src
+
+code_quality:
+  stage: code quality
+
+
+# Pylama:
+#  stage: code quality
+#  tags:
+#    - docker
+#  script:
+#    - python -m pip install pylama
+#    - pylama src
+
+docker-build-main:
+  # Official docker image.
+  image: docker:latest
+  stage: build
+  tags:
+    - docker_build
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE" .
+    - docker push "$CI_REGISTRY_IMAGE"
+  only:
+    - main

@@ -1,0 +1,25 @@
+[AdKatsDB]
+host =
+port = 3306
+user =
+pw =
+db =
+
+[Cloudflare]
+# Cloudflare API token
+# Needs edit permissions for : account - access: organisation, identity providers and groups
+# + Include your ZeroTrust account
+token =
+# The ID of your ZeroTrust account.
+# You can extract it from the URL:
+# https://one.dash.cloudflare.com/{account_id}/home
+account_id =
+
+[GroupMapping]
+# Mapping between access groups and BFACP groups
+# Key = Access Group
+# Value = BFACP roles/groups with access to this group
+# Seperator between groups: ,
+# Example:
+Admin = First Tier Admin, Second Tier Admin
+Management = Server Management
