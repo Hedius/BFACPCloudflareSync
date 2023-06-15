@@ -8,8 +8,8 @@ from typing import Tuple, List, Dict
 from deepdiff.diff import DeepDiff
 from loguru import logger
 
-from src.Cloudflare import Cloudflare
-from src.AdKatsDB import AdKatsDB
+from Cloudflare import Cloudflare
+from AdKatsDB import AdKatsDB
 
 
 class CloudflareSync:
