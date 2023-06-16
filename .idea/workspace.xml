@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ff461cc-9359-40d4-b459-3ac34ff716bd" name="Changes" comment="fix inmports">
+    <list default="true" id="7ff461cc-9359-40d4-b459-3ac34ff716bd" name="Changes" comment="fix invalid if condition">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sync.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sync.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686692740602</updated>
-      <workItem from="1686692742348" duration="15761000" />
+      <workItem from="1686692742348" duration="17194000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1686782262025</created>
@@ -108,17 +108,36 @@
       <option name="project" value="LOCAL" />
       <updated>1686815858845</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix invalid if condition">
+      <created>1686941971083</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686941971083</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="fix typo" />
     <MESSAGE value="fix inmports" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix inmports" />
+    <MESSAGE value="fix invalid if condition" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix invalid if condition" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
