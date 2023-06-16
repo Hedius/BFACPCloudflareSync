@@ -45,7 +45,7 @@ class CloudflareSync:
 
                 # Refresh from api if needed
                 if (group not in self._cf_cache
-                        or (datetime.now() - self._cf_cache[group]['timestamp']) <= timedelta(minutes=30)):
+                        or (datetime.now() - self._cf_cache[group]['timestamp']) >= timedelta(minutes=30)):
                     api_data = self.api.get_group_by_name(group)
                     api_emails = [x['email']['email'] for x in api_data['include']]
                     self._cf_cache[group] = {
