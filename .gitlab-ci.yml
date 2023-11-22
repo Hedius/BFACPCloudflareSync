@@ -49,4 +49,4 @@ docker-build:
     - docker push $CI_REGISTRY_IMAGE:$TAG
     - docker push $DOCKER_HUB_REPO:$TAG
   rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCHn
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
